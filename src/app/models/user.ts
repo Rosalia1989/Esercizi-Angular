@@ -16,7 +16,7 @@ export interface User {
     name: string;
     surname: string;
     age?: number;
-    dateOfBirth?: string;
+    dateOfBirth?: Date | string;
     address?: Address;
     role?: Role;
     username?: string;
