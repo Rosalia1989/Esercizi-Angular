@@ -1,13 +1,44 @@
-import { Component, OnInit } from '@angular/core';
-import { User, Gender, Roles } from 'src/models/user';
+export interface Address {
+    city: string;
+    street: string;
+    postalCode: string;
+}
 
-@Component({
-  selector: 'app-user-detail',
-  templateUrl: './user-detail.component.html',
-  styleUrls: ['./user-detail.component.css']
-})
-export class UserDetailComponent implements OnInit {
-  user : User = {
+export enum Roles {
+    Staff = 'staff',
+    Student = 'student',
+    Manager = 'manager',
+    Admin = 'admin'
+};
+
+export interface Companies {
+    id: number;
+    name: string;
+    description: string;
+    location: Address;
+}
+
+export enum Gender {
+    Male = 'male',
+    Female = 'female',
+    Other = 'other'
+};
+
+export interface User {
+    id?: number;
+    name: string;
+    surname: string;
+    age?: number;
+    dateOfBirth?: string;
+    address?: Address;
+    role?: Roles;
+    username?: string;
+    profilePhotoUrl?: string;
+    companies?: Companies[];
+    gender?: Gender;
+}
+
+const user : User = {
     id: 3487,
     name: 'Mario',
     surname: 'Rossi',
@@ -43,14 +74,4 @@ export class UserDetailComponent implements OnInit {
         }
     ],
     gender: Gender.Male
-}
-
-firstCompany = this.user.companies?.find(item => item.id === 148979);
-secondCompany = this.user.companies?.find(item => item.id === 123123);
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
