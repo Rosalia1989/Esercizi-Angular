@@ -1,1 +1,6 @@
-<h6 class="m-3 p-3 px-5">user-single.component</h6>
+<ol>
+    <li class="pt-4 text-center" *ngFor="let user of users">
+        <img src={{user.profilePhotoUrl}} style="width: 70px; border-radius: 50px;">
+        <p><strong>{{user.name}} {{user.surname}}</strong> {{user.age}} {{user.address?.city}} </p>
+    </li>
+</ol>
