@@ -7,7 +7,7 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./user-single.component.css']
 })
 export class UserSingleComponent implements OnInit {
-  @Input() users!:User[];
+  @Input() user!:User;
   
   @Output() deletedUser = new EventEmitter<User>();
 
