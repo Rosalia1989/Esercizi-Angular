@@ -1,0 +1,14 @@
+<div class="m-4 p-3" *ngIf="users.length > 0; else noUsers">
+    <ul>
+        <li class="pt-4 text-center border" *ngFor="let user of users" [ngClass]=" {
+            'border-danger' : user.role === 'staff',
+            'border-warning' : user.role === 'admin',
+            'border-success' : user.role === 'manager'}">
+            <app-user-single [user]="user" (deletedUser)="deleteUser($event)"></app-user-single>
+        </li>
+    </ul>
+</div>
+
+<ng-template #noUsers>
+    <h1>There are not users</h1>
+</ng-template>     
