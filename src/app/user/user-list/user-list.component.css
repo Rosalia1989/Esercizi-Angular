@@ -3,3 +3,7 @@ div {
     border: 1px solid green;
     width: 25vw;
 }
+
+.border {
+    border-width: 2px !important;
+} 
