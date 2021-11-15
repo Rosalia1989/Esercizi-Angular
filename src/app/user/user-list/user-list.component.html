@@ -1,5 +1,9 @@
 <div class="m-4 p-3" ngIf="users.length > 0; else noUsers">
-    <app-user-single [users]="users" (deletedUser)="deleteUser($event)"></app-user-single>
+    <ul>
+        <li class="pt-4 text-center" *ngFor="let user of users">
+            <app-user-single [user]="user" (deletedUser)="deleteUser($event)"></app-user-single>
+        </li>
+    </ul>
 </div>
 
 <ng-template #noUsers>
