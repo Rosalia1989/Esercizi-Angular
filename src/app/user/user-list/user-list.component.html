@@ -1,11 +1,7 @@
-<div class="m-4 p-3" *ngIf="users.length > 0; else noUsers">
+<div class="m-4 p-3">
     <ul>
         <li class="pt-4 text-center" *ngFor="let user of users">
             <app-user-single [user]="user"></app-user-single>
         </li>
     </ul>
 </div>
-
-<ng-template #noUsers>
-    <h1>There are not users</h1>
-</ng-template>     
