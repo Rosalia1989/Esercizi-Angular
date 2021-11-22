@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User, Gender, Roles } from 'src/app/models/user';
+import { User, Gender, Role } from 'src/app/models/user';
 
 @Component({
   selector: 'app-user-detail',
@@ -18,7 +18,7 @@ export class UserDetailComponent implements OnInit {
         street: 'Via roma 10',
         postalCode: '00100'
     },
-    role: Roles.Staff,
+    role: Role.Staff,
     username: 'MarioRossi80',
     profilePhotoUrl: 'https://bit.ly/3yRngEP',
     companies: [{

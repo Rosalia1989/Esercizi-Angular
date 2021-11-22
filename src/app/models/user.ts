@@ -4,14 +4,14 @@ export interface Address {
     postalCode: string;
 }
 
-export enum Roles {
+export enum Role {
     Staff = 'staff',
     Student = 'student',
     Manager = 'manager',
     Admin = 'admin'
 };
 
-export interface Companies {
+export interface Company {
     id: number;
     name: string;
     description: string;
@@ -31,10 +31,10 @@ export interface User {
     age?: number;
     dateOfBirth?: Date | string;
     address?: Address;
-    role?: Roles;
+    role?: Role;
     username?: string;
     profilePhotoUrl?: string;
-    companies?: Companies[];
+    companies?: Company[];
     gender?: Gender;
 }
 
