@@ -20,10 +20,10 @@ users: User[]= [
         street: 'Via roma 10',
         postalCode: '00100'
       },
-      role: Role.STAFF,
+      role: Role.Staff,
       username: 'MarioRossi80',
       profilePhotoUrl: 'https://bit.ly/3yRngEP',
-      gender: Gender.MALE
+      gender: Gender.Male
     },
     {
       id: 12312,
@@ -36,10 +36,10 @@ users: User[]= [
         street: 'Via Palermo 10',
         postalCode: '90100'
       },
-      role: Role.MANAGER,
+      role: Role.Manager,
       username: 'MariaRossa94',
       profilePhotoUrl: 'https://bit.ly/3DWWxuj',
-      gender: Gender.FEMALE
+      gender: Gender.Female
     },
     {
       id: 45645,
@@ -52,10 +52,10 @@ users: User[]= [
         street: 'Via Palermo 120',
         postalCode: '90100'
       },
-      role: Role.ADMIN,
+      role: Role.Admin,
       username: 'ElisMiao',
       profilePhotoUrl: 'https://bit.ly/3zU6iH3',
-      gender: Gender.FEMALE
+      gender: Gender.Female
     }
 ];
 
