@@ -1,6 +1,7 @@
-h6 {
+div {
     background-color: rgb(233, 231, 151);
     border: 1px solid orange;
     height: 80vh;
     width: 15vw;
+    overflow-y: scroll;
 }
