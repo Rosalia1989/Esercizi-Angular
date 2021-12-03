@@ -1,15 +1,9 @@
-export interface Address {
-    city: string;
-    street: string;
-    postalCode: string;
-}
-
 export enum Role {
     Staff = 'staff',
     Student = 'student',
     Manager = 'manager',
     Admin = 'admin'
-};
+}
 
 export interface Company {
     id: number;
@@ -22,7 +16,7 @@ export enum Gender {
     Male = 'male',
     Female = 'female',
     Other = 'other'
-};
+}
 
 export interface User {
     id?: number;
@@ -38,3 +32,8 @@ export interface User {
     gender?: Gender;
 }
 
+interface Address {
+    city: string;
+    street: string;
+    postalCode: string;
+}
