@@ -1,8 +1,7 @@
 <div class="m-4 p-3">
     <ul>
         <li class="pt-4 text-center" *ngFor="let user of users">
-            <img src={{user.profilePhotoUrl}} style="width: 70px; border-radius: 50px;">
-            <p><strong>{{user.name}} {{user.surname}}</strong> {{user.age}} {{user.address?.city}} </p>
+            <app-user-single [user]="user"></app-user-single>
         </li>
     </ul>
 </div>
