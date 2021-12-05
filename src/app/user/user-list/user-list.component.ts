@@ -59,6 +59,10 @@ users: User[]= [
     }
 ];
 
+  deleteUser(user:User):void {
+    this.users.splice(this.users.indexOf(user), 1);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

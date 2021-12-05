@@ -1,4 +1,7 @@
-h6 {
-    background-color: rgb(226, 209, 160);
-    border: 1px solid orangered;
+button {
+    border: solid 1px green;
+    border-radius: 10px;
+    font-size: .9rem;
+    background-color: rgb(141, 236, 220);
+    
 }
