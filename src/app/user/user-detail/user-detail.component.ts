@@ -18,7 +18,7 @@ export class UserDetailComponent implements OnInit {
         street: 'Via roma 10',
         postalCode: '00100'
     },
-    role: Role.STAFF,
+    role: Role.Staff,
     username: 'MarioRossi80',
     profilePhotoUrl: 'https://bit.ly/3yRngEP',
     companies: [{
@@ -42,7 +42,7 @@ export class UserDetailComponent implements OnInit {
             }
         }
     ],
-    gender: Gender.MALE
+    gender: Gender.Male
 }
 
 firstCompany = this.user.companies?.find(item => item.id === 148979);

@@ -1,14 +1,21 @@
 export enum Role {
-    STAFF = 'staff',
-    STUDENT = 'student',
-    MANAGER = 'manager',
-    ADMIN = 'admin'
+    Staff = 'staff',
+    Student = 'student',
+    Manager = 'manager',
+    Admin = 'admin'
+}
+
+export interface Company {
+    id: number;
+    name: string;
+    description: string;
+    location: Address;
 }
 
 export enum Gender {
-    MALE = 'male',
-    FEMALE = 'female',
-    OTHER = 'other'
+    Male = 'male',
+    Female = 'female',
+    Other = 'other'
 }
 
 export interface User {
@@ -21,7 +28,7 @@ export interface User {
     role?: Role;
     username?: string;
     profilePhotoUrl?: string;
-    companies?: Companies[];
+    companies?: Company[];
     gender?: Gender;
 }
 
@@ -29,11 +36,4 @@ interface Address {
     city: string;
     street: string;
     postalCode: string;
-}
-
-interface Companies {
-    id: number;
-    name: string;
-    description: string;
-    location: Address;
 }
